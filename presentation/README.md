@@ -2,6 +2,8 @@
 
 Présentation universitaire interactive en français, séparée des phases de traitement CloudMind.
 
+**Ameni Khaldi · ESEN M2DSSD**
+
 ## Lancement local
 
 Depuis la racine du projet, dans PowerShell :

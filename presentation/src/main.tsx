@@ -136,6 +136,9 @@ function Presentation({ data }: { data: Evidence }) {
         <p className="kicker" data-reveal>{chapter.kicker}</p>
         <h1 data-reveal>{chapter.title}<br /><em>{chapter.accent}</em></h1>
         <p className="lead" data-reveal>{chapter.text}</p>
+        {(scene === 0 || scene === story.length - 1) && <p className="credit" data-reveal>
+          <strong>Ameni Khaldi</strong> <span aria-hidden="true">·</span> ESEN M2DSSD
+        </p>}
         {sceneMetrics(scene, data).length > 0 && <div className="metrics" data-reveal>
           {sceneMetrics(scene, data).map(([value, label]) => <div key={label}><strong>{value}</strong><span>{label}</span></div>)}
         </div>}

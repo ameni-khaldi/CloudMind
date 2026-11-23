@@ -41,6 +41,8 @@ h1, h2, .notes strong, .info strong { font-family: var(--serif); font-weight: 50
 h1 { font-size: clamp(40px, 4.35vw, 90px); line-height: .99; margin: 0; letter-spacing: -.072em; text-wrap: balance; }
 h1 em { color: var(--rust); font-weight: 400; }
 .lead { color: #445763; font-size: clamp(16px, 1.25vw, 23px); max-width: 38ch; margin: 24px 0; line-height: 1.55; }
+.credit { color: var(--muted); font-size: 15px; margin: -8px 0 22px; }
+.credit strong { color: var(--navy); }
 .metrics { display: flex; gap: clamp(12px,1.4vw,30px); border-top: 1px solid var(--line); padding: 15px 0 2px; margin: 0 0 23px; }
 .metrics div { min-width: 0; display: grid; gap: 1px; }
 .metrics div + div { border-left: 1px solid var(--line); padding-left: clamp(10px,1vw,21px); }
