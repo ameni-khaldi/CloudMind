@@ -1,0 +1,1441 @@
+{
+  "quality": {
+    "rows": 100000,
+    "hotels": 50,
+    "non_synthetic_rows": 0,
+    "duplicate_review_ids": 0
+  },
+  "analytics": {
+    "runtime": {
+      "version": "4.0.4",
+      "master": "local[2]",
+      "parallelisme": 2,
+      "partitions_shuffle": "8",
+      "execution_adaptative": "true",
+      "partitions_source": 2,
+      "partitions_transformation": 2
+    },
+    "validation": {
+      "avis": 100000,
+      "identifiants": 100000,
+      "reclamations": 42509,
+      "invalides": 0
+    },
+    "seconds": 18.303735499968752
+  },
+  "hotels": [
+    {
+      "hotel_id": "HTL001",
+      "hotel_name": "Azure Bay Tunis 1",
+      "avis": 1997,
+      "note_moyenne": 3.959939909864797,
+      "positive": 1395,
+      "neutral": 395,
+      "negative": 207,
+      "reclamations": 536,
+      "non_resolues": 188,
+      "reponse_moyenne_heures": 35.02816091954024,
+      "resolution_moyenne_jours": 7.205533596837944
+    },
+    {
+      "hotel_id": "HTL002",
+      "hotel_name": "Coral Garden Sousse 1",
+      "avis": 1934,
+      "note_moyenne": 3.4198552223371252,
+      "positive": 981,
+      "neutral": 519,
+      "negative": 434,
+      "reclamations": 827,
+      "non_resolues": 275,
+      "reponse_moyenne_heures": 34.78260869565217,
+      "resolution_moyenne_jours": 7.30478589420655
+    },
+    {
+      "hotel_id": "HTL003",
+      "hotel_name": "Grand Atlas Hammamet 1",
+      "avis": 1970,
+      "note_moyenne": 3.8568527918781728,
+      "positive": 1288,
+      "neutral": 446,
+      "negative": 236,
+      "reclamations": 586,
+      "non_resolues": 185,
+      "reponse_moyenne_heures": 36.3192019950125,
+      "resolution_moyenne_jours": 7.357142857142857
+    },
+    {
+      "hotel_id": "HTL004",
+      "hotel_name": "Cedar Suites Djerba 1",
+      "avis": 2015,
+      "note_moyenne": 3.4764267990074442,
+      "positive": 1040,
+      "neutral": 553,
+      "negative": 422,
+      "reclamations": 859,
+      "non_resolues": 267,
+      "reponse_moyenne_heures": 37.11030405405403,
+      "resolution_moyenne_jours": 7.066666666666666
+    },
+    {
+      "hotel_id": "HTL005",
+      "hotel_name": "Golden Palm Paris 1",
+      "avis": 2071,
+      "note_moyenne": 3.2240463544181557,
+      "positive": 885,
+      "neutral": 606,
+      "negative": 580,
+      "reclamations": 1034,
+      "non_resolues": 318,
+      "reponse_moyenne_heures": 35.33589385474859,
+      "resolution_moyenne_jours": 7.381422924901186
+    },
+    {
+      "hotel_id": "HTL006",
+      "hotel_name": "Blue Horizon Lyon 1",
+      "avis": 2047,
+      "note_moyenne": 2.7322911577918907,
+      "positive": 544,
+      "neutral": 614,
+      "negative": 889,
+      "reclamations": 1319,
+      "non_resolues": 390,
+      "reponse_moyenne_heures": 35.53659849300327,
+      "resolution_moyenne_jours": 7.494539781591263
+    },
+    {
+      "hotel_id": "HTL007",
+      "hotel_name": "Lumiere House Rome 1",
+      "avis": 2011,
+      "note_moyenne": 2.8284435604177025,
+      "positive": 581,
+      "neutral": 628,
+      "negative": 802,
+      "reclamations": 1269,
+      "non_resolues": 417,
+      "reponse_moyenne_heures": 35.536032863849776,
+      "resolution_moyenne_jours": 7.466557911908646
+    },
+    {
+      "hotel_id": "HTL008",
+      "hotel_name": "Urban Nest Milan 1",
+      "avis": 2057,
+      "note_moyenne": 3.058337384540593,
+      "positive": 761,
+      "neutral": 633,
+      "negative": 663,
+      "reclamations": 1129,
+      "non_resolues": 367,
+      "reponse_moyenne_heures": 35.098687664041975,
+      "resolution_moyenne_jours": 7.677655677655678
+    },
+    {
+      "hotel_id": "HTL009",
+      "hotel_name": "Marina View Barcelona 1",
+      "avis": 2045,
+      "note_moyenne": 3.652322738386308,
+      "positive": 1192,
+      "neutral": 499,
+      "negative": 354,
+      "reclamations": 745,
+      "non_resolues": 228,
+      "reponse_moyenne_heures": 33.83423597678915,
+      "resolution_moyenne_jours": 7.457446808510638
+    },
+    {
+      "hotel_id": "HTL010",
+      "hotel_name": "Royal Terrace Madrid 1",
+      "avis": 2096,
+      "note_moyenne": 3.0844465648854964,
+      "positive": 821,
+      "neutral": 592,
+      "negative": 683,
+      "reclamations": 1119,
+      "non_resolues": 341,
+      "reponse_moyenne_heures": 35.284447300771205,
+      "resolution_moyenne_jours": 7.301075268817204
+    },
+    {
+      "hotel_id": "HTL011",
+      "hotel_name": "Azure Bay London 1",
+      "avis": 1959,
+      "note_moyenne": 3.6763654925982645,
+      "positive": 1136,
+      "neutral": 515,
+      "negative": 308,
+      "reclamations": 698,
+      "non_resolues": 225,
+      "reponse_moyenne_heures": 35.76427061310783,
+      "resolution_moyenne_jours": 7.520833333333333
+    },
+    {
+      "hotel_id": "HTL012",
+      "hotel_name": "Coral Garden Berlin 1",
+      "avis": 1978,
+      "note_moyenne": 4.02376137512639,
+      "positive": 1410,
+      "neutral": 382,
+      "negative": 186,
+      "reclamations": 463,
+      "non_resolues": 148,
+      "reponse_moyenne_heures": 38.1438095238095,
+      "resolution_moyenne_jours": 7.04424778761062
+    },
+    {
+      "hotel_id": "HTL013",
+      "hotel_name": "Grand Atlas Dubai 1",
+      "avis": 2002,
+      "note_moyenne": 2.7737262737262736,
+      "positive": 563,
+      "neutral": 572,
+      "negative": 867,
+      "reclamations": 1255,
+      "non_resolues": 421,
+      "reponse_moyenne_heures": 35.7320143884892,
+      "resolution_moyenne_jours": 7.5815126050420165
+    },
+    {
+      "hotel_id": "HTL014",
+      "hotel_name": "Cedar Suites Istanbul 1",
+      "avis": 2015,
+      "note_moyenne": 4.0287841191066995,
+      "positive": 1461,
+      "neutral": 371,
+      "negative": 183,
+      "reclamations": 490,
+      "non_resolues": 155,
+      "reponse_moyenne_heures": 37.20925373134331,
+      "resolution_moyenne_jours": 7.575
+    },
+    {
+      "hotel_id": "HTL015",
+      "hotel_name": "Golden Palm Lisbon 1",
+      "avis": 1964,
+      "note_moyenne": 3.8650712830957232,
+      "positive": 1294,
+      "neutral": 448,
+      "negative": 222,
+      "reclamations": 570,
+      "non_resolues": 190,
+      "reponse_moyenne_heures": 35.430263157894764,
+      "resolution_moyenne_jours": 7.338235294117647
+    },
+    {
+      "hotel_id": "HTL016",
+      "hotel_name": "Blue Horizon Amsterdam 1",
+      "avis": 1977,
+      "note_moyenne": 3.3773394031360646,
+      "positive": 946,
+      "neutral": 544,
+      "negative": 487,
+      "reclamations": 896,
+      "non_resolues": 296,
+      "reponse_moyenne_heures": 35.848,
+      "resolution_moyenne_jours": 7.476076555023924
+    },
+    {
+      "hotel_id": "HTL017",
+      "hotel_name": "Lumiere House New York 1",
+      "avis": 2073,
+      "note_moyenne": 3.7433671008200675,
+      "positive": 1295,
+      "neutral": 465,
+      "negative": 313,
+      "reclamations": 691,
+      "non_resolues": 200,
+      "reponse_moyenne_heures": 35.375763747454144,
+      "resolution_moyenne_jours": 7.278260869565218
+    },
+    {
+      "hotel_id": "HTL018",
+      "hotel_name": "Urban Nest Chicago 1",
+      "avis": 1993,
+      "note_moyenne": 3.797290516808831,
+      "positive": 1260,
+      "neutral": 469,
+      "negative": 264,
+      "reclamations": 646,
+      "non_resolues": 207,
+      "reponse_moyenne_heures": 36.11958997722093,
+      "resolution_moyenne_jours": 7.672897196261682
+    },
+    {
+      "hotel_id": "HTL019",
+      "hotel_name": "Marina View Montreal 1",
+      "avis": 1888,
+      "note_moyenne": 3.457627118644068,
+      "positive": 950,
+      "neutral": 516,
+      "negative": 422,
+      "reclamations": 814,
+      "non_resolues": 266,
+      "reponse_moyenne_heures": 35.60164233576644,
+      "resolution_moyenne_jours": 7.350515463917525
+    },
+    {
+      "hotel_id": "HTL020",
+      "hotel_name": "Royal Terrace Tokyo 1",
+      "avis": 2072,
+      "note_moyenne": 3.662644787644788,
+      "positive": 1222,
+      "neutral": 498,
+      "negative": 352,
+      "reclamations": 732,
+      "non_resolues": 229,
+      "reponse_moyenne_heures": 38.037574552683864,
+      "resolution_moyenne_jours": 7.708108108108108
+    },
+    {
+      "hotel_id": "HTL021",
+      "hotel_name": "Azure Bay Bangkok 1",
+      "avis": 2021,
+      "note_moyenne": 3.281048985650668,
+      "positive": 906,
+      "neutral": 575,
+      "negative": 540,
+      "reclamations": 977,
+      "non_resolues": 317,
+      "reponse_moyenne_heures": 36.01136363636366,
+      "resolution_moyenne_jours": 7.818376068376068
+    },
+    {
+      "hotel_id": "HTL022",
+      "hotel_name": "Coral Garden Marrakesh 1",
+      "avis": 1930,
+      "note_moyenne": 3.471502590673575,
+      "positive": 995,
+      "neutral": 531,
+      "negative": 404,
+      "reclamations": 796,
+      "non_resolues": 253,
+      "reponse_moyenne_heures": 35.79447513812151,
+      "resolution_moyenne_jours": 7.309002433090025
+    },
+    {
+      "hotel_id": "HTL023",
+      "hotel_name": "Grand Atlas Cairo 1",
+      "avis": 2009,
+      "note_moyenne": 3.4559482329517173,
+      "positive": 1030,
+      "neutral": 546,
+      "negative": 433,
+      "reclamations": 838,
+      "non_resolues": 268,
+      "reponse_moyenne_heures": 36.70666666666664,
+      "resolution_moyenne_jours": 7.3389423076923075
+    },
+    {
+      "hotel_id": "HTL024",
+      "hotel_name": "Cedar Suites Athens 1",
+      "avis": 2054,
+      "note_moyenne": 3.1411879259980524,
+      "positive": 810,
+      "neutral": 617,
+      "negative": 627,
+      "reclamations": 1080,
+      "non_resolues": 319,
+      "reponse_moyenne_heures": 35.32102496714845,
+      "resolution_moyenne_jours": 7.2707182320441985
+    },
+    {
+      "hotel_id": "HTL025",
+      "hotel_name": "Golden Palm Vienna 1",
+      "avis": 2034,
+      "note_moyenne": 3.2227138643067845,
+      "positive": 859,
+      "neutral": 571,
+      "negative": 604,
+      "reclamations": 1026,
+      "non_resolues": 332,
+      "reponse_moyenne_heures": 35.9312680115274,
+      "resolution_moyenne_jours": 7.640081799591002
+    },
+    {
+      "hotel_id": "HTL026",
+      "hotel_name": "Blue Horizon Tunis 2",
+      "avis": 1975,
+      "note_moyenne": 3.4167088607594938,
+      "positive": 965,
+      "neutral": 558,
+      "negative": 452,
+      "reclamations": 842,
+      "non_resolues": 273,
+      "reponse_moyenne_heures": 36.315817223198586,
+      "resolution_moyenne_jours": 8.031007751937985
+    },
+    {
+      "hotel_id": "HTL027",
+      "hotel_name": "Lumiere House Sousse 2",
+      "avis": 2017,
+      "note_moyenne": 3.0173525037183935,
+      "positive": 702,
+      "neutral": 616,
+      "negative": 699,
+      "reclamations": 1131,
+      "non_resolues": 360,
+      "reponse_moyenne_heures": 36.31880674448772,
+      "resolution_moyenne_jours": 7.264448336252189
+    },
+    {
+      "hotel_id": "HTL028",
+      "hotel_name": "Urban Nest Hammamet 2",
+      "avis": 1959,
+      "note_moyenne": 3.834099030117407,
+      "positive": 1280,
+      "neutral": 422,
+      "negative": 257,
+      "reclamations": 572,
+      "non_resolues": 189,
+      "reponse_moyenne_heures": 36.61279373368146,
+      "resolution_moyenne_jours": 7.740213523131673
+    },
+    {
+      "hotel_id": "HTL029",
+      "hotel_name": "Marina View Djerba 2",
+      "avis": 1986,
+      "note_moyenne": 3.5770392749244713,
+      "positive": 1096,
+      "neutral": 530,
+      "negative": 360,
+      "reclamations": 765,
+      "non_resolues": 254,
+      "reponse_moyenne_heures": 36.07866927592958,
+      "resolution_moyenne_jours": 7.387012987012987
+    },
+    {
+      "hotel_id": "HTL030",
+      "hotel_name": "Royal Terrace Paris 2",
+      "avis": 2007,
+      "note_moyenne": 3.8305929247633284,
+      "positive": 1304,
+      "neutral": 458,
+      "negative": 245,
+      "reclamations": 607,
+      "non_resolues": 161,
+      "reponse_moyenne_heures": 34.16793721973094,
+      "resolution_moyenne_jours": 7.466453674121405
+    },
+    {
+      "hotel_id": "HTL031",
+      "hotel_name": "Azure Bay Lyon 2",
+      "avis": 1986,
+      "note_moyenne": 3.173716012084592,
+      "positive": 821,
+      "neutral": 557,
+      "negative": 608,
+      "reclamations": 1006,
+      "non_resolues": 297,
+      "reponse_moyenne_heures": 34.976868829337086,
+      "resolution_moyenne_jours": 7.347058823529411
+    },
+    {
+      "hotel_id": "HTL032",
+      "hotel_name": "Coral Garden Rome 2",
+      "avis": 1981,
+      "note_moyenne": 2.954568399798082,
+      "positive": 685,
+      "neutral": 532,
+      "negative": 764,
+      "reclamations": 1166,
+      "non_resolues": 373,
+      "reponse_moyenne_heures": 34.93745271122318,
+      "resolution_moyenne_jours": 7.1925042589437815
+    },
+    {
+      "hotel_id": "HTL033",
+      "hotel_name": "Grand Atlas Milan 2",
+      "avis": 1983,
+      "note_moyenne": 3.9490670700958144,
+      "positive": 1368,
+      "neutral": 413,
+      "negative": 202,
+      "reclamations": 510,
+      "non_resolues": 163,
+      "reponse_moyenne_heures": 36.906916426512986,
+      "resolution_moyenne_jours": 7.296442687747035
+    },
+    {
+      "hotel_id": "HTL034",
+      "hotel_name": "Cedar Suites Barcelona 2",
+      "avis": 1941,
+      "note_moyenne": 3.563111798042246,
+      "positive": 1074,
+      "neutral": 482,
+      "negative": 385,
+      "reclamations": 742,
+      "non_resolues": 228,
+      "reponse_moyenne_heures": 34.518287937743196,
+      "resolution_moyenne_jours": 7.697406340057637
+    },
+    {
+      "hotel_id": "HTL035",
+      "hotel_name": "Golden Palm Madrid 2",
+      "avis": 1942,
+      "note_moyenne": 3.571575695159629,
+      "positive": 1067,
+      "neutral": 513,
+      "negative": 362,
+      "reclamations": 742,
+      "non_resolues": 231,
+      "reponse_moyenne_heures": 35.1481409001957,
+      "resolution_moyenne_jours": 7.664850136239782
+    },
+    {
+      "hotel_id": "HTL036",
+      "hotel_name": "Blue Horizon London 2",
+      "avis": 1983,
+      "note_moyenne": 3.8250126071608674,
+      "positive": 1277,
+      "neutral": 453,
+      "negative": 253,
+      "reclamations": 608,
+      "non_resolues": 200,
+      "reponse_moyenne_heures": 37.0311274509804,
+      "resolution_moyenne_jours": 7.0
+    },
+    {
+      "hotel_id": "HTL037",
+      "hotel_name": "Lumiere House Berlin 2",
+      "avis": 1970,
+      "note_moyenne": 2.7766497461928936,
+      "positive": 560,
+      "neutral": 564,
+      "negative": 846,
+      "reclamations": 1244,
+      "non_resolues": 421,
+      "reponse_moyenne_heures": 35.1908869987849,
+      "resolution_moyenne_jours": 7.7
+    },
+    {
+      "hotel_id": "HTL038",
+      "hotel_name": "Urban Nest Dubai 2",
+      "avis": 2071,
+      "note_moyenne": 3.686141960405601,
+      "positive": 1242,
+      "neutral": 498,
+      "negative": 331,
+      "reclamations": 711,
+      "non_resolues": 213,
+      "reponse_moyenne_heures": 34.08493975903619,
+      "resolution_moyenne_jours": 7.604519774011299
+    },
+    {
+      "hotel_id": "HTL039",
+      "hotel_name": "Marina View Istanbul 2",
+      "avis": 2015,
+      "note_moyenne": 4.084863523573201,
+      "positive": 1491,
+      "neutral": 361,
+      "negative": 163,
+      "reclamations": 447,
+      "non_resolues": 136,
+      "reponse_moyenne_heures": 34.300321543408366,
+      "resolution_moyenne_jours": 7.407239819004525
+    },
+    {
+      "hotel_id": "HTL040",
+      "hotel_name": "Royal Terrace Lisbon 2",
+      "avis": 2052,
+      "note_moyenne": 3.026803118908382,
+      "positive": 717,
+      "neutral": 632,
+      "negative": 703,
+      "reclamations": 1158,
+      "non_resolues": 397,
+      "reponse_moyenne_heures": 34.760840998685914,
+      "resolution_moyenne_jours": 7.46067415730337
+    },
+    {
+      "hotel_id": "HTL041",
+      "hotel_name": "Azure Bay Amsterdam 2",
+      "avis": 1916,
+      "note_moyenne": 3.6988517745302714,
+      "positive": 1164,
+      "neutral": 428,
+      "negative": 324,
+      "reclamations": 671,
+      "non_resolues": 196,
+      "reponse_moyenne_heures": 35.50063157894739,
+      "resolution_moyenne_jours": 7.335329341317365
+    },
+    {
+      "hotel_id": "HTL042",
+      "hotel_name": "Coral Garden New York 2",
+      "avis": 2048,
+      "note_moyenne": 3.126953125,
+      "positive": 804,
+      "neutral": 606,
+      "negative": 638,
+      "reclamations": 1088,
+      "non_resolues": 350,
+      "reponse_moyenne_heures": 36.46869918699187,
+      "resolution_moyenne_jours": 7.3559322033898304
+    },
+    {
+      "hotel_id": "HTL043",
+      "hotel_name": "Grand Atlas Chicago 2",
+      "avis": 1984,
+      "note_moyenne": 3.205141129032258,
+      "positive": 827,
+      "neutral": 581,
+      "negative": 576,
+      "reclamations": 991,
+      "non_resolues": 293,
+      "reponse_moyenne_heures": 36.05659025787968,
+      "resolution_moyenne_jours": 7.48015873015873
+    },
+    {
+      "hotel_id": "HTL044",
+      "hotel_name": "Cedar Suites Montreal 2",
+      "avis": 2042,
+      "note_moyenne": 4.048971596474045,
+      "positive": 1477,
+      "neutral": 389,
+      "negative": 176,
+      "reclamations": 482,
+      "non_resolues": 172,
+      "reponse_moyenne_heures": 37.266774193548386,
+      "resolution_moyenne_jours": 7.559633027522936
+    },
+    {
+      "hotel_id": "HTL045",
+      "hotel_name": "Golden Palm Tokyo 2",
+      "avis": 1997,
+      "note_moyenne": 3.14421632448673,
+      "positive": 807,
+      "neutral": 577,
+      "negative": 613,
+      "reclamations": 1000,
+      "non_resolues": 332,
+      "reponse_moyenne_heures": 35.75613772455088,
+      "resolution_moyenne_jours": 7.329113924050633
+    },
+    {
+      "hotel_id": "HTL046",
+      "hotel_name": "Blue Horizon Bangkok 2",
+      "avis": 1994,
+      "note_moyenne": 3.688064192577733,
+      "positive": 1171,
+      "neutral": 509,
+      "negative": 314,
+      "reclamations": 683,
+      "non_resolues": 214,
+      "reponse_moyenne_heures": 35.67100213219617,
+      "resolution_moyenne_jours": 7.575581395348837
+    },
+    {
+      "hotel_id": "HTL047",
+      "hotel_name": "Lumiere House Marrakesh 2",
+      "avis": 1988,
+      "note_moyenne": 3.3229376257545273,
+      "positive": 895,
+      "neutral": 594,
+      "negative": 499,
+      "reclamations": 935,
+      "non_resolues": 301,
+      "reponse_moyenne_heures": 35.53075709779177,
+      "resolution_moyenne_jours": 7.664516129032258
+    },
+    {
+      "hotel_id": "HTL048",
+      "hotel_name": "Urban Nest Cairo 2",
+      "avis": 1954,
+      "note_moyenne": 3.9483111566018425,
+      "positive": 1337,
+      "neutral": 409,
+      "negative": 208,
+      "reclamations": 528,
+      "non_resolues": 170,
+      "reponse_moyenne_heures": 35.22905027932962,
+      "resolution_moyenne_jours": 6.829545454545454
+    },
+    {
+      "hotel_id": "HTL049",
+      "hotel_name": "Marina View Athens 2",
+      "avis": 1970,
+      "note_moyenne": 2.8243654822335027,
+      "positive": 574,
+      "neutral": 597,
+      "negative": 799,
+      "reclamations": 1222,
+      "non_resolues": 379,
+      "reponse_moyenne_heures": 35.33368920521943,
+      "resolution_moyenne_jours": 7.5520661157024795
+    },
+    {
+      "hotel_id": "HTL050",
+      "hotel_name": "Royal Terrace Vienna 2",
+      "avis": 2027,
+      "note_moyenne": 2.819930932412432,
+      "positive": 586,
+      "neutral": 612,
+      "negative": 829,
+      "reclamations": 1263,
+      "non_resolues": 400,
+      "reponse_moyenne_heures": 35.40973348783312,
+      "resolution_moyenne_jours": 7.6103896103896105
+    }
+  ],
+  "segments": [
+    {
+      "segment_client": "loyalty",
+      "avis": 22044,
+      "note_moyenne": 3.4454273271638542,
+      "positive": 11249,
+      "neutral": 5672,
+      "negative": 5123,
+      "reclamations": 9388,
+      "non_resolues": 2998,
+      "reponse_moyenne_heures": 36.021517996870166,
+      "resolution_moyenne_jours": 7.384012197778262
+    },
+    {
+      "segment_client": "vip",
+      "avis": 6046,
+      "note_moyenne": 3.4581541515051275,
+      "positive": 3134,
+      "neutral": 1505,
+      "negative": 1407,
+      "reclamations": 2554,
+      "non_resolues": 829,
+      "reponse_moyenne_heures": 26.044579710144916,
+      "resolution_moyenne_jours": 7.4332247557003255
+    },
+    {
+      "segment_client": "standard",
+      "avis": 71910,
+      "note_moyenne": 3.4450563204005005,
+      "positive": 36533,
+      "neutral": 18819,
+      "negative": 16558,
+      "reclamations": 30567,
+      "non_resolues": 9678,
+      "reponse_moyenne_heures": 36.34527741873713,
+      "resolution_moyenne_jours": 7.479246039703228
+    }
+  ],
+  "monthly": [
+    {
+      "mois": "2023-01-01",
+      "avis": 1412,
+      "positive": 686,
+      "neutral": 381,
+      "negative": 345
+    },
+    {
+      "mois": "2023-02-01",
+      "avis": 2022,
+      "positive": 1034,
+      "neutral": 555,
+      "negative": 433
+    },
+    {
+      "mois": "2023-03-01",
+      "avis": 2240,
+      "positive": 1161,
+      "neutral": 588,
+      "negative": 491
+    },
+    {
+      "mois": "2023-04-01",
+      "avis": 2190,
+      "positive": 1131,
+      "neutral": 542,
+      "negative": 517
+    },
+    {
+      "mois": "2023-05-01",
+      "avis": 2233,
+      "positive": 1129,
+      "neutral": 591,
+      "negative": 513
+    },
+    {
+      "mois": "2023-06-01",
+      "avis": 2107,
+      "positive": 1105,
+      "neutral": 528,
+      "negative": 474
+    },
+    {
+      "mois": "2023-07-01",
+      "avis": 2269,
+      "positive": 1141,
+      "neutral": 595,
+      "negative": 533
+    },
+    {
+      "mois": "2023-08-01",
+      "avis": 2197,
+      "positive": 1139,
+      "neutral": 565,
+      "negative": 493
+    },
+    {
+      "mois": "2023-09-01",
+      "avis": 2205,
+      "positive": 1106,
+      "neutral": 578,
+      "negative": 521
+    },
+    {
+      "mois": "2023-10-01",
+      "avis": 2149,
+      "positive": 1056,
+      "neutral": 602,
+      "negative": 491
+    },
+    {
+      "mois": "2023-11-01",
+      "avis": 2057,
+      "positive": 1048,
+      "neutral": 525,
+      "negative": 484
+    },
+    {
+      "mois": "2023-12-01",
+      "avis": 2194,
+      "positive": 1108,
+      "neutral": 553,
+      "negative": 533
+    },
+    {
+      "mois": "2024-01-01",
+      "avis": 2169,
+      "positive": 1081,
+      "neutral": 577,
+      "negative": 511
+    },
+    {
+      "mois": "2024-02-01",
+      "avis": 2044,
+      "positive": 1038,
+      "neutral": 517,
+      "negative": 489
+    },
+    {
+      "mois": "2024-03-01",
+      "avis": 2188,
+      "positive": 1140,
+      "neutral": 563,
+      "negative": 485
+    },
+    {
+      "mois": "2024-04-01",
+      "avis": 2115,
+      "positive": 1111,
+      "neutral": 526,
+      "negative": 478
+    },
+    {
+      "mois": "2024-05-01",
+      "avis": 2234,
+      "positive": 1158,
+      "neutral": 522,
+      "negative": 554
+    },
+    {
+      "mois": "2024-06-01",
+      "avis": 2135,
+      "positive": 1059,
+      "neutral": 578,
+      "negative": 498
+    },
+    {
+      "mois": "2024-07-01",
+      "avis": 2130,
+      "positive": 1078,
+      "neutral": 552,
+      "negative": 500
+    },
+    {
+      "mois": "2024-08-01",
+      "avis": 2263,
+      "positive": 1146,
+      "neutral": 565,
+      "negative": 552
+    },
+    {
+      "mois": "2024-09-01",
+      "avis": 2239,
+      "positive": 1134,
+      "neutral": 582,
+      "negative": 523
+    },
+    {
+      "mois": "2024-10-01",
+      "avis": 2239,
+      "positive": 1156,
+      "neutral": 559,
+      "negative": 524
+    },
+    {
+      "mois": "2024-11-01",
+      "avis": 2204,
+      "positive": 1107,
+      "neutral": 579,
+      "negative": 518
+    },
+    {
+      "mois": "2024-12-01",
+      "avis": 2191,
+      "positive": 1088,
+      "neutral": 594,
+      "negative": 509
+    },
+    {
+      "mois": "2025-01-01",
+      "avis": 2276,
+      "positive": 1148,
+      "neutral": 610,
+      "negative": 518
+    },
+    {
+      "mois": "2025-02-01",
+      "avis": 1999,
+      "positive": 997,
+      "neutral": 526,
+      "negative": 476
+    },
+    {
+      "mois": "2025-03-01",
+      "avis": 2144,
+      "positive": 1108,
+      "neutral": 520,
+      "negative": 516
+    },
+    {
+      "mois": "2025-04-01",
+      "avis": 2088,
+      "positive": 1077,
+      "neutral": 524,
+      "negative": 487
+    },
+    {
+      "mois": "2025-05-01",
+      "avis": 2162,
+      "positive": 1124,
+      "neutral": 583,
+      "negative": 455
+    },
+    {
+      "mois": "2025-06-01",
+      "avis": 2065,
+      "positive": 1053,
+      "neutral": 530,
+      "negative": 482
+    },
+    {
+      "mois": "2025-07-01",
+      "avis": 2273,
+      "positive": 1168,
+      "neutral": 575,
+      "negative": 530
+    },
+    {
+      "mois": "2025-08-01",
+      "avis": 2148,
+      "positive": 1094,
+      "neutral": 557,
+      "negative": 497
+    },
+    {
+      "mois": "2025-09-01",
+      "avis": 2163,
+      "positive": 1133,
+      "neutral": 563,
+      "negative": 467
+    },
+    {
+      "mois": "2025-10-01",
+      "avis": 2299,
+      "positive": 1157,
+      "neutral": 615,
+      "negative": 527
+    },
+    {
+      "mois": "2025-11-01",
+      "avis": 2112,
+      "positive": 1070,
+      "neutral": 548,
+      "negative": 494
+    },
+    {
+      "mois": "2025-12-01",
+      "avis": 2179,
+      "positive": 1081,
+      "neutral": 573,
+      "negative": 525
+    },
+    {
+      "mois": "2026-01-01",
+      "avis": 2202,
+      "positive": 1142,
+      "neutral": 555,
+      "negative": 505
+    },
+    {
+      "mois": "2026-02-01",
+      "avis": 2083,
+      "positive": 1046,
+      "neutral": 569,
+      "negative": 468
+    },
+    {
+      "mois": "2026-03-01",
+      "avis": 2175,
+      "positive": 1124,
+      "neutral": 555,
+      "negative": 496
+    },
+    {
+      "mois": "2026-04-01",
+      "avis": 2104,
+      "positive": 1102,
+      "neutral": 557,
+      "negative": 445
+    },
+    {
+      "mois": "2026-05-01",
+      "avis": 2271,
+      "positive": 1154,
+      "neutral": 615,
+      "negative": 502
+    },
+    {
+      "mois": "2026-06-01",
+      "avis": 2168,
+      "positive": 1081,
+      "neutral": 588,
+      "negative": 499
+    },
+    {
+      "mois": "2026-07-01",
+      "avis": 2184,
+      "positive": 1106,
+      "neutral": 575,
+      "negative": 503
+    },
+    {
+      "mois": "2026-08-01",
+      "avis": 2183,
+      "positive": 1125,
+      "neutral": 571,
+      "negative": 487
+    },
+    {
+      "mois": "2026-09-01",
+      "avis": 2199,
+      "positive": 1081,
+      "neutral": 577,
+      "negative": 541
+    },
+    {
+      "mois": "2026-10-01",
+      "avis": 3097,
+      "positive": 1605,
+      "neutral": 793,
+      "negative": 699
+    }
+  ],
+  "ml": {
+    "comparison": {
+      "validation_comparison": {
+        "logistic_regression": {
+          "accuracy": 0.6786385859345618,
+          "macro_precision": 0.6510795050861969,
+          "macro_recall": 0.6517897074865373,
+          "macro_f1": 0.6486646845320886,
+          "weighted_f1": 0.6683953712145057,
+          "per_class": {
+            "positive": {
+              "precision": 0.7770725902419675,
+              "recall": 0.9006896551724138,
+              "f1": 0.8343270868824533,
+              "support": 2175
+            },
+            "neutral": {
+              "precision": 0.4912536443148688,
+              "recall": 0.41967621419676215,
+              "f1": 0.4526527871054399,
+              "support": 1606
+            },
+            "negative": {
+              "precision": 0.6849122807017544,
+              "recall": 0.6350032530904359,
+              "f1": 0.6590141796083727,
+              "support": 1537
+            }
+          },
+          "confusion_matrix": {
+            "labels": [
+              "positive",
+              "neutral",
+              "negative"
+            ],
+            "matrix": [
+              [
+                1959,
+                185,
+                31
+              ],
+              [
+                514,
+                674,
+                418
+              ],
+              [
+                48,
+                513,
+                976
+              ]
+            ]
+          },
+          "majority_class": "positive",
+          "majority_baseline_accuracy": 0.40898834148176005,
+          "row_count": 5318,
+          "fit_seconds": 7.4966251000296324
+        },
+        "naive_bayes": {
+          "accuracy": 0.6538172245204964,
+          "macro_precision": 0.6453580746258041,
+          "macro_recall": 0.6428034446478131,
+          "macro_f1": 0.6430254535404268,
+          "weighted_f1": 0.6583375618416368,
+          "per_class": {
+            "positive": {
+              "precision": 0.8311291963377416,
+              "recall": 0.751264367816092,
+              "f1": 0.7891813571601063,
+              "support": 2175
+            },
+            "neutral": {
+              "precision": 0.45586527293844364,
+              "recall": 0.4887920298879203,
+              "f1": 0.4717548076923077,
+              "support": 1606
+            },
+            "negative": {
+              "precision": 0.649079754601227,
+              "recall": 0.6883539362394274,
+              "f1": 0.6681401957688665,
+              "support": 1537
+            }
+          },
+          "confusion_matrix": {
+            "labels": [
+              "positive",
+              "neutral",
+              "negative"
+            ],
+            "matrix": [
+              [
+                1634,
+                475,
+                66
+              ],
+              [
+                315,
+                785,
+                506
+              ],
+              [
+                17,
+                462,
+                1058
+              ]
+            ]
+          },
+          "majority_class": "positive",
+          "majority_baseline_accuracy": 0.40898834148176005,
+          "row_count": 5318,
+          "fit_seconds": 2.2222308999625966
+        }
+      },
+      "selected_model": "logistic_regression",
+      "test_metrics": {
+        "accuracy": 0.6867503229378114,
+        "macro_precision": 0.6507629776260843,
+        "macro_recall": 0.6495652220391548,
+        "macro_f1": 0.6466571363833381,
+        "weighted_f1": 0.6739671782208756,
+        "per_class": {
+          "positive": {
+            "precision": 0.7852693294246977,
+            "recall": 0.9179695866352539,
+            "f1": 0.8464500839340378,
+            "support": 4669
+          },
+          "neutral": {
+            "precision": 0.4882556796303427,
+            "recall": 0.3987421383647799,
+            "f1": 0.4389821706768219,
+            "support": 3180
+          },
+          "negative": {
+            "precision": 0.6787639238232124,
+            "recall": 0.6319839411174306,
+            "f1": 0.6545391545391546,
+            "support": 2989
+          }
+        },
+        "confusion_matrix": {
+          "labels": [
+            "positive",
+            "neutral",
+            "negative"
+          ],
+          "matrix": [
+            [
+              4286,
+              332,
+              51
+            ],
+            [
+              1069,
+              1268,
+              843
+            ],
+            [
+              103,
+              997,
+              1889
+            ]
+          ]
+        },
+        "majority_class": "positive",
+        "majority_baseline_accuracy": 0.4307990404133604,
+        "row_count": 10838
+      }
+    },
+    "split": {
+      "train": 55040,
+      "validation": 5318,
+      "test": 10838
+    },
+    "isolation": {
+      "customers_crossing_safe_splits": 0,
+      "review_text_crossing_safe_splits": 0,
+      "isolated": true
+    },
+    "originalCustomerOverlap": 17045,
+    "originalTextOverlap": 11502
+  },
+  "cloud": {
+    "runtime": {
+      "python": "3.11.18",
+      "spark": "4.0.4",
+      "hadoop": "3.4.1",
+      "java": "21.0.13.1",
+      "hadoop_aws": "file:/opt/s3a/hadoop-aws-3.4.1.jar",
+      "aws_sdk": "file:/opt/s3a/bundle-2.24.6.jar",
+      "filesystem": "org.apache.hadoop.fs.s3a.S3AFileSystem"
+    },
+    "input_uri": "s3a://cloudmind/processed/run-4ff3862adb014f2ca339df466c17e025/hotel_reviews.parquet",
+    "input_rows": 100000,
+    "output_uri": "s3a://cloudmind/analytics/run-4ff3862adb014f2ca339df466c17e025/phase4/sentiment_distribution",
+    "output_rows": 3,
+    "output_schema": {
+      "type": "struct",
+      "fields": [
+        {
+          "name": "sentiment",
+          "type": "string",
+          "nullable": true,
+          "metadata": {}
+        },
+        {
+          "name": "review_count",
+          "type": "long",
+          "nullable": true,
+          "metadata": {}
+        }
+      ]
+    },
+    "sentiment_distribution": [
+      {
+        "sentiment": "negative",
+        "review_count": 23088
+      },
+      {
+        "sentiment": "neutral",
+        "review_count": 25996
+      },
+      {
+        "sentiment": "positive",
+        "review_count": 50916
+      }
+    ],
+    "verified_phase3_objects": 10
+  },
+  "benchmark": [
+    {
+      "rows": 10000,
+      "engine": "Spark",
+      "stage": "read",
+      "median_s": 0.2270859000273049,
+      "stdev_s": 0.040892949845403787,
+      "min_s": 0.18104409996885806,
+      "max_s": 0.26260400004684925
+    },
+    {
+      "rows": 10000,
+      "engine": "Spark",
+      "stage": "process",
+      "median_s": 0.26907469995785505,
+      "stdev_s": 0.01801025237136406,
+      "min_s": 0.2404362999368459,
+      "max_s": 0.27367609995417297
+    },
+    {
+      "rows": 10000,
+      "engine": "Spark",
+      "stage": "export",
+      "median_s": 0.0006774000357836485,
+      "stdev_s": 2.5753603822546257e-05,
+      "min_s": 0.0006524000782519579,
+      "max_s": 0.0007039000047370791
+    },
+    {
+      "rows": 10000,
+      "engine": "Pandas",
+      "stage": "read",
+      "median_s": 0.0029866999248042703,
+      "stdev_s": 0.00022764339823017426,
+      "min_s": 0.002825199975632131,
+      "max_s": 0.0032746000215411186
+    },
+    {
+      "rows": 10000,
+      "engine": "Pandas",
+      "stage": "process",
+      "median_s": 0.04406620003283024,
+      "stdev_s": 0.0004792673000978087,
+      "min_s": 0.043770399992354214,
+      "max_s": 0.04470790002960712
+    },
+    {
+      "rows": 10000,
+      "engine": "Pandas",
+      "stage": "export",
+      "median_s": 0.0006914000259712338,
+      "stdev_s": 0.00012936053263362587,
+      "min_s": 0.0006262999959290028,
+      "max_s": 0.0008757000323385
+    },
+    {
+      "rows": 50000,
+      "engine": "Spark",
+      "stage": "read",
+      "median_s": 0.1755886001046747,
+      "stdev_s": 0.01536126984523625,
+      "min_s": 0.17041339993011206,
+      "max_s": 0.19922730000689626
+    },
+    {
+      "rows": 50000,
+      "engine": "Spark",
+      "stage": "process",
+      "median_s": 0.21377959998790175,
+      "stdev_s": 0.020601714504388708,
+      "min_s": 0.18826079997234046,
+      "max_s": 0.22903600009158254
+    },
+    {
+      "rows": 50000,
+      "engine": "Spark",
+      "stage": "export",
+      "median_s": 0.0007027999963611364,
+      "stdev_s": 6.998011769351547e-05,
+      "min_s": 0.0006608999101445079,
+      "max_s": 0.0007975000189617276
+    },
+    {
+      "rows": 50000,
+      "engine": "Pandas",
+      "stage": "read",
+      "median_s": 0.005327999941073358,
+      "stdev_s": 0.0002696350586363788,
+      "min_s": 0.005089699989184737,
+      "max_s": 0.005627799895592034
+    },
+    {
+      "rows": 50000,
+      "engine": "Pandas",
+      "stage": "process",
+      "median_s": 0.1993908000877127,
+      "stdev_s": 0.001418484179285027,
+      "min_s": 0.1973413999658078,
+      "max_s": 0.20006500009912997
+    },
+    {
+      "rows": 50000,
+      "engine": "Pandas",
+      "stage": "export",
+      "median_s": 0.0007415999425575137,
+      "stdev_s": 0.0001399929085602799,
+      "min_s": 0.0007013001013547182,
+      "max_s": 0.0009613999864086509
+    },
+    {
+      "rows": 100000,
+      "engine": "Spark",
+      "stage": "read",
+      "median_s": 0.20170710003003478,
+      "stdev_s": 0.016102985266280165,
+      "min_s": 0.17487340001389384,
+      "max_s": 0.20371370005887002
+    },
+    {
+      "rows": 100000,
+      "engine": "Spark",
+      "stage": "process",
+      "median_s": 0.21333119994960725,
+      "stdev_s": 0.02569680225501643,
+      "min_s": 0.1923168000066653,
+      "max_s": 0.24344140000175685
+    },
+    {
+      "rows": 100000,
+      "engine": "Spark",
+      "stage": "export",
+      "median_s": 0.0006892000092193484,
+      "stdev_s": 1.0388578685298793e-05,
+      "min_s": 0.0006804000586271286,
+      "max_s": 0.0007010999834164977
+    },
+    {
+      "rows": 100000,
+      "engine": "Pandas",
+      "stage": "read",
+      "median_s": 0.007855699979700148,
+      "stdev_s": 8.585454117507655e-05,
+      "min_s": 0.00784670002758503,
+      "max_s": 0.007999700028449297
+    },
+    {
+      "rows": 100000,
+      "engine": "Pandas",
+      "stage": "process",
+      "median_s": 0.3983754999935627,
+      "stdev_s": 0.002533428674493254,
+      "min_s": 0.395301999989897,
+      "max_s": 0.40032729995436966
+    },
+    {
+      "rows": 100000,
+      "engine": "Pandas",
+      "stage": "export",
+      "median_s": 0.0007524000247940421,
+      "stdev_s": 0.00024925187275129054,
+      "min_s": 0.0007247000467032194,
+      "max_s": 0.001169599941931665
+    }
+  ],
+  "sources": [
+    "data/processed/data_quality.json",
+    "data/processed/phase2/run-fa137ff05cee42c89e5622d5eec78ca2/rapport_execution.json",
+    "data/processed/phase3/run-d907a7f0f9bd491ca4723205d208fddd/rapport_execution.json",
+    "dashboard/phase4_verified.json",
+    "benchmarks/phase5_results.json"
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "runtime": {
+    "python": "3.11.18",
+    "spark": "4.0.4",
+    "hadoop": "3.4.1",
+    "java": "21.0.13.1",
+    "hadoop_aws": "file:/opt/s3a/hadoop-aws-3.4.1.jar",
+    "aws_sdk": "file:/opt/s3a/bundle-2.24.6.jar",
+    "filesystem": "org.apache.hadoop.fs.s3a.S3AFileSystem"
+  },
+  "input_uri": "s3a://cloudmind/processed/run-4ff3862adb014f2ca339df466c17e025/hotel_reviews.parquet",
+  "input_rows": 100000,
+  "input_schema": {
+    "type": "struct",
+    "fields": [
+      {
+        "name": "review_id",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "hotel_id",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "hotel_name",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "city",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "country",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "hotel_stars",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "customer_id",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "customer_segment",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "trip_type",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "room_type",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "booking_channel",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "stay_nights",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "review_date",
+        "type": "date",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "check_in_date",
+        "type": "date",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "rating",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "sentiment",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "sentiment_score",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "review_title",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "review_text",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "primary_aspect",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "secondary_aspect",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "has_complaint",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "complaint_severity",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "resolution_status",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "response_time_hours",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "resolved_in_days",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "would_recommend",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "helpful_votes",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "is_synthetic",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "dataset_split",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      }
+    ]
+  },
+  "output_uri": "s3a://cloudmind/analytics/run-4ff3862adb014f2ca339df466c17e025/phase4/sentiment_distribution",
+  "output_rows": 3,
+  "output_schema": {
+    "type": "struct",
+    "fields": [
+      {
+        "name": "sentiment",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "review_count",
+        "type": "long",
+        "nullable": true,
+        "metadata": {}
+      }
+    ]
+  },
+  "sentiment_distribution": [
+    {
+      "sentiment": "negative",
+      "review_count": 23088
+    },
+    {
+      "sentiment": "neutral",
+      "review_count": 25996
+    },
+    {
+      "sentiment": "positive",
+      "review_count": 50916
+    }
+  ],
+  "verified_phase3_objects": 10
+}

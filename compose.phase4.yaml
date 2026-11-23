@@ -1,0 +1,62 @@
+name: cloudmind-phase4
+
+x-storage-env: &storage-env
+  MINIO_ROOT_USER: ${MINIO_ROOT_USER:?Set MINIO_ROOT_USER in .env.phase4}
+  MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:?Set MINIO_ROOT_PASSWORD in .env.phase4}
+  CLOUDMIND_BUCKET: ${CLOUDMIND_BUCKET:-cloudmind}
+  CLOUDMIND_MINIO_ENDPOINT: http://minio:9000
+
+services:
+  minio:
+    build:
+      context: phase4
+      dockerfile: Minio.Dockerfile
+    image: cloudmind-minio:RELEASE.2025-09-07T16-13-09Z
+    command: ["server", "/data", "--console-address", ":9001"]
+    environment: *storage-env
+    ports:
+      - "127.0.0.1:${MINIO_API_PORT:-9000}:9000"
+      - "127.0.0.1:${MINIO_CONSOLE_PORT:-9001}:9001"
+    volumes:
+      - minio-data:/data
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "http://localhost:9000/minio/health/ready"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 10s
+
+  bucket-init:
+    build:
+      context: .
+      dockerfile: phase4/Spark.Dockerfile
+      target: storage
+    environment: *storage-env
+    working_dir: /workspace
+    volumes:
+      - .:/workspace:ro
+    command: ["python", "src/phase4.py", "init"]
+    depends_on:
+      minio:
+        condition: service_healthy
+
+  spark:
+    profiles: ["pipeline"]
+    build:
+      context: .
+      dockerfile: phase4/Spark.Dockerfile
+    environment:
+      <<: *storage-env
+      CLOUDMIND_PHASE4_INTEGRATION: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+      SPARK_LOCAL_IP: 127.0.0.1
+    working_dir: /workspace
+    volumes:
+      - .:/workspace:ro
+    command: ["python", "src/phase4.py", "run"]
+    depends_on:
+      bucket-init:
+        condition: service_completed_successfully
+
+volumes:
+  minio-data:

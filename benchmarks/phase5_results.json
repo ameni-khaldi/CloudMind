@@ -1,0 +1,591 @@
+{
+  "configuration": {
+    "platform": "Windows-10-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+    "logical_cpus": 12,
+    "memory_bytes": 16866660352,
+    "python": "3.11.9",
+    "java": "21.0.13.1",
+    "spark": "4.0.4",
+    "spark_master": "local[2]",
+    "spark_parallelism": 2,
+    "spark_shuffle_partitions": "8",
+    "spark_adaptive": "true",
+    "pandas": "2.3.3",
+    "pyarrow": "26.0.1",
+    "sizes": [
+      10000,
+      50000,
+      100000
+    ],
+    "warmups": 1,
+    "repeats": 3,
+    "inputs": [
+      {
+        "rows": 10000,
+        "bytes": 28326,
+        "sha256": "10bc8512df4325f31522a270fe719dce34fd9e4b967a4de80dfecfcba422f0a6"
+      },
+      {
+        "rows": 50000,
+        "bytes": 139254,
+        "sha256": "ba103735a9232de0e6ae39838e39289abb035ae9d1f2b9a8957d2fa6d91e2c94"
+      },
+      {
+        "rows": 100000,
+        "bytes": 277958,
+        "sha256": "9a68df4fb5f74b2087d966b70094767410cbdf570c29e7b8cedd9a40ae2f8837"
+      }
+    ],
+    "selection": "Premières N lignes physiques, mêmes quatre colonnes, Parquet Snappy",
+    "read_definition": "Lecture matérialisée, incluant persist/count pour Spark",
+    "process_definition": "Agrégation et matérialisation des résultats en tuples Python",
+    "export_definition": "Même écrivain CSV Python, résultat local, fermeture de fichier incluse",
+    "excluded": "Démarrage JVM, préparation des Parquet et suppression du cache Spark",
+    "disk_cache": "Cache du système d’exploitation conservé, ordre des moteurs alterné"
+  },
+  "measurements": [
+    {
+      "rows": 10000,
+      "engine": "Pandas",
+      "repeat": 1,
+      "stage": "read",
+      "seconds": 0.0029866999248042703
+    },
+    {
+      "rows": 10000,
+      "engine": "Pandas",
+      "repeat": 1,
+      "stage": "process",
+      "seconds": 0.04406620003283024
+    },
+    {
+      "rows": 10000,
+      "engine": "Pandas",
+      "repeat": 1,
+      "stage": "export",
+      "seconds": 0.0008757000323385
+    },
+    {
+      "rows": 10000,
+      "engine": "Spark",
+      "repeat": 1,
+      "stage": "read",
+      "seconds": 0.26260400004684925
+    },
+    {
+      "rows": 10000,
+      "engine": "Spark",
+      "repeat": 1,
+      "stage": "process",
+      "seconds": 0.27367609995417297
+    },
+    {
+      "rows": 10000,
+      "engine": "Spark",
+      "repeat": 1,
+      "stage": "export",
+      "seconds": 0.0006774000357836485
+    },
+    {
+      "rows": 10000,
+      "engine": "Spark",
+      "repeat": 2,
+      "stage": "read",
+      "seconds": 0.2270859000273049
+    },
+    {
+      "rows": 10000,
+      "engine": "Spark",
+      "repeat": 2,
+      "stage": "process",
+      "seconds": 0.26907469995785505
+    },
+    {
+      "rows": 10000,
+      "engine": "Spark",
+      "repeat": 2,
+      "stage": "export",
+      "seconds": 0.0007039000047370791
+    },
+    {
+      "rows": 10000,
+      "engine": "Pandas",
+      "repeat": 2,
+      "stage": "read",
+      "seconds": 0.0032746000215411186
+    },
+    {
+      "rows": 10000,
+      "engine": "Pandas",
+      "repeat": 2,
+      "stage": "process",
+      "seconds": 0.04470790002960712
+    },
+    {
+      "rows": 10000,
+      "engine": "Pandas",
+      "repeat": 2,
+      "stage": "export",
+      "seconds": 0.0006914000259712338
+    },
+    {
+      "rows": 10000,
+      "engine": "Pandas",
+      "repeat": 3,
+      "stage": "read",
+      "seconds": 0.002825199975632131
+    },
+    {
+      "rows": 10000,
+      "engine": "Pandas",
+      "repeat": 3,
+      "stage": "process",
+      "seconds": 0.043770399992354214
+    },
+    {
+      "rows": 10000,
+      "engine": "Pandas",
+      "repeat": 3,
+      "stage": "export",
+      "seconds": 0.0006262999959290028
+    },
+    {
+      "rows": 10000,
+      "engine": "Spark",
+      "repeat": 3,
+      "stage": "read",
+      "seconds": 0.18104409996885806
+    },
+    {
+      "rows": 10000,
+      "engine": "Spark",
+      "repeat": 3,
+      "stage": "process",
+      "seconds": 0.2404362999368459
+    },
+    {
+      "rows": 10000,
+      "engine": "Spark",
+      "repeat": 3,
+      "stage": "export",
+      "seconds": 0.0006524000782519579
+    },
+    {
+      "rows": 50000,
+      "engine": "Pandas",
+      "repeat": 1,
+      "stage": "read",
+      "seconds": 0.005627799895592034
+    },
+    {
+      "rows": 50000,
+      "engine": "Pandas",
+      "repeat": 1,
+      "stage": "process",
+      "seconds": 0.1993908000877127
+    },
+    {
+      "rows": 50000,
+      "engine": "Pandas",
+      "repeat": 1,
+      "stage": "export",
+      "seconds": 0.0009613999864086509
+    },
+    {
+      "rows": 50000,
+      "engine": "Spark",
+      "repeat": 1,
+      "stage": "read",
+      "seconds": 0.19922730000689626
+    },
+    {
+      "rows": 50000,
+      "engine": "Spark",
+      "repeat": 1,
+      "stage": "process",
+      "seconds": 0.21377959998790175
+    },
+    {
+      "rows": 50000,
+      "engine": "Spark",
+      "repeat": 1,
+      "stage": "export",
+      "seconds": 0.0007975000189617276
+    },
+    {
+      "rows": 50000,
+      "engine": "Spark",
+      "repeat": 2,
+      "stage": "read",
+      "seconds": 0.17041339993011206
+    },
+    {
+      "rows": 50000,
+      "engine": "Spark",
+      "repeat": 2,
+      "stage": "process",
+      "seconds": 0.22903600009158254
+    },
+    {
+      "rows": 50000,
+      "engine": "Spark",
+      "repeat": 2,
+      "stage": "export",
+      "seconds": 0.0006608999101445079
+    },
+    {
+      "rows": 50000,
+      "engine": "Pandas",
+      "repeat": 2,
+      "stage": "read",
+      "seconds": 0.005327999941073358
+    },
+    {
+      "rows": 50000,
+      "engine": "Pandas",
+      "repeat": 2,
+      "stage": "process",
+      "seconds": 0.20006500009912997
+    },
+    {
+      "rows": 50000,
+      "engine": "Pandas",
+      "repeat": 2,
+      "stage": "export",
+      "seconds": 0.0007415999425575137
+    },
+    {
+      "rows": 50000,
+      "engine": "Pandas",
+      "repeat": 3,
+      "stage": "read",
+      "seconds": 0.005089699989184737
+    },
+    {
+      "rows": 50000,
+      "engine": "Pandas",
+      "repeat": 3,
+      "stage": "process",
+      "seconds": 0.1973413999658078
+    },
+    {
+      "rows": 50000,
+      "engine": "Pandas",
+      "repeat": 3,
+      "stage": "export",
+      "seconds": 0.0007013001013547182
+    },
+    {
+      "rows": 50000,
+      "engine": "Spark",
+      "repeat": 3,
+      "stage": "read",
+      "seconds": 0.1755886001046747
+    },
+    {
+      "rows": 50000,
+      "engine": "Spark",
+      "repeat": 3,
+      "stage": "process",
+      "seconds": 0.18826079997234046
+    },
+    {
+      "rows": 50000,
+      "engine": "Spark",
+      "repeat": 3,
+      "stage": "export",
+      "seconds": 0.0007027999963611364
+    },
+    {
+      "rows": 100000,
+      "engine": "Pandas",
+      "repeat": 1,
+      "stage": "read",
+      "seconds": 0.007855699979700148
+    },
+    {
+      "rows": 100000,
+      "engine": "Pandas",
+      "repeat": 1,
+      "stage": "process",
+      "seconds": 0.3983754999935627
+    },
+    {
+      "rows": 100000,
+      "engine": "Pandas",
+      "repeat": 1,
+      "stage": "export",
+      "seconds": 0.0007524000247940421
+    },
+    {
+      "rows": 100000,
+      "engine": "Spark",
+      "repeat": 1,
+      "stage": "read",
+      "seconds": 0.20170710003003478
+    },
+    {
+      "rows": 100000,
+      "engine": "Spark",
+      "repeat": 1,
+      "stage": "process",
+      "seconds": 0.1923168000066653
+    },
+    {
+      "rows": 100000,
+      "engine": "Spark",
+      "repeat": 1,
+      "stage": "export",
+      "seconds": 0.0006804000586271286
+    },
+    {
+      "rows": 100000,
+      "engine": "Spark",
+      "repeat": 2,
+      "stage": "read",
+      "seconds": 0.20371370005887002
+    },
+    {
+      "rows": 100000,
+      "engine": "Spark",
+      "repeat": 2,
+      "stage": "process",
+      "seconds": 0.21333119994960725
+    },
+    {
+      "rows": 100000,
+      "engine": "Spark",
+      "repeat": 2,
+      "stage": "export",
+      "seconds": 0.0007010999834164977
+    },
+    {
+      "rows": 100000,
+      "engine": "Pandas",
+      "repeat": 2,
+      "stage": "read",
+      "seconds": 0.007999700028449297
+    },
+    {
+      "rows": 100000,
+      "engine": "Pandas",
+      "repeat": 2,
+      "stage": "process",
+      "seconds": 0.395301999989897
+    },
+    {
+      "rows": 100000,
+      "engine": "Pandas",
+      "repeat": 2,
+      "stage": "export",
+      "seconds": 0.001169599941931665
+    },
+    {
+      "rows": 100000,
+      "engine": "Pandas",
+      "repeat": 3,
+      "stage": "read",
+      "seconds": 0.00784670002758503
+    },
+    {
+      "rows": 100000,
+      "engine": "Pandas",
+      "repeat": 3,
+      "stage": "process",
+      "seconds": 0.40032729995436966
+    },
+    {
+      "rows": 100000,
+      "engine": "Pandas",
+      "repeat": 3,
+      "stage": "export",
+      "seconds": 0.0007247000467032194
+    },
+    {
+      "rows": 100000,
+      "engine": "Spark",
+      "repeat": 3,
+      "stage": "read",
+      "seconds": 0.17487340001389384
+    },
+    {
+      "rows": 100000,
+      "engine": "Spark",
+      "repeat": 3,
+      "stage": "process",
+      "seconds": 0.24344140000175685
+    },
+    {
+      "rows": 100000,
+      "engine": "Spark",
+      "repeat": 3,
+      "stage": "export",
+      "seconds": 0.0006892000092193484
+    }
+  ],
+  "summary": [
+    {
+      "rows": 10000,
+      "engine": "Spark",
+      "stage": "read",
+      "median_s": 0.2270859000273049,
+      "stdev_s": 0.040892949845403787,
+      "min_s": 0.18104409996885806,
+      "max_s": 0.26260400004684925
+    },
+    {
+      "rows": 10000,
+      "engine": "Spark",
+      "stage": "process",
+      "median_s": 0.26907469995785505,
+      "stdev_s": 0.01801025237136406,
+      "min_s": 0.2404362999368459,
+      "max_s": 0.27367609995417297
+    },
+    {
+      "rows": 10000,
+      "engine": "Spark",
+      "stage": "export",
+      "median_s": 0.0006774000357836485,
+      "stdev_s": 2.5753603822546257e-05,
+      "min_s": 0.0006524000782519579,
+      "max_s": 0.0007039000047370791
+    },
+    {
+      "rows": 10000,
+      "engine": "Pandas",
+      "stage": "read",
+      "median_s": 0.0029866999248042703,
+      "stdev_s": 0.00022764339823017426,
+      "min_s": 0.002825199975632131,
+      "max_s": 0.0032746000215411186
+    },
+    {
+      "rows": 10000,
+      "engine": "Pandas",
+      "stage": "process",
+      "median_s": 0.04406620003283024,
+      "stdev_s": 0.0004792673000978087,
+      "min_s": 0.043770399992354214,
+      "max_s": 0.04470790002960712
+    },
+    {
+      "rows": 10000,
+      "engine": "Pandas",
+      "stage": "export",
+      "median_s": 0.0006914000259712338,
+      "stdev_s": 0.00012936053263362587,
+      "min_s": 0.0006262999959290028,
+      "max_s": 0.0008757000323385
+    },
+    {
+      "rows": 50000,
+      "engine": "Spark",
+      "stage": "read",
+      "median_s": 0.1755886001046747,
+      "stdev_s": 0.01536126984523625,
+      "min_s": 0.17041339993011206,
+      "max_s": 0.19922730000689626
+    },
+    {
+      "rows": 50000,
+      "engine": "Spark",
+      "stage": "process",
+      "median_s": 0.21377959998790175,
+      "stdev_s": 0.020601714504388708,
+      "min_s": 0.18826079997234046,
+      "max_s": 0.22903600009158254
+    },
+    {
+      "rows": 50000,
+      "engine": "Spark",
+      "stage": "export",
+      "median_s": 0.0007027999963611364,
+      "stdev_s": 6.998011769351547e-05,
+      "min_s": 0.0006608999101445079,
+      "max_s": 0.0007975000189617276
+    },
+    {
+      "rows": 50000,
+      "engine": "Pandas",
+      "stage": "read",
+      "median_s": 0.005327999941073358,
+      "stdev_s": 0.0002696350586363788,
+      "min_s": 0.005089699989184737,
+      "max_s": 0.005627799895592034
+    },
+    {
+      "rows": 50000,
+      "engine": "Pandas",
+      "stage": "process",
+      "median_s": 0.1993908000877127,
+      "stdev_s": 0.001418484179285027,
+      "min_s": 0.1973413999658078,
+      "max_s": 0.20006500009912997
+    },
+    {
+      "rows": 50000,
+      "engine": "Pandas",
+      "stage": "export",
+      "median_s": 0.0007415999425575137,
+      "stdev_s": 0.0001399929085602799,
+      "min_s": 0.0007013001013547182,
+      "max_s": 0.0009613999864086509
+    },
+    {
+      "rows": 100000,
+      "engine": "Spark",
+      "stage": "read",
+      "median_s": 0.20170710003003478,
+      "stdev_s": 0.016102985266280165,
+      "min_s": 0.17487340001389384,
+      "max_s": 0.20371370005887002
+    },
+    {
+      "rows": 100000,
+      "engine": "Spark",
+      "stage": "process",
+      "median_s": 0.21333119994960725,
+      "stdev_s": 0.02569680225501643,
+      "min_s": 0.1923168000066653,
+      "max_s": 0.24344140000175685
+    },
+    {
+      "rows": 100000,
+      "engine": "Spark",
+      "stage": "export",
+      "median_s": 0.0006892000092193484,
+      "stdev_s": 1.0388578685298793e-05,
+      "min_s": 0.0006804000586271286,
+      "max_s": 0.0007010999834164977
+    },
+    {
+      "rows": 100000,
+      "engine": "Pandas",
+      "stage": "read",
+      "median_s": 0.007855699979700148,
+      "stdev_s": 8.585454117507655e-05,
+      "min_s": 0.00784670002758503,
+      "max_s": 0.007999700028449297
+    },
+    {
+      "rows": 100000,
+      "engine": "Pandas",
+      "stage": "process",
+      "median_s": 0.3983754999935627,
+      "stdev_s": 0.002533428674493254,
+      "min_s": 0.395301999989897,
+      "max_s": 0.40032729995436966
+    },
+    {
+      "rows": 100000,
+      "engine": "Pandas",
+      "stage": "export",
+      "median_s": 0.0007524000247940421,
+      "stdev_s": 0.00024925187275129054,
+      "min_s": 0.0007247000467032194,
+      "max_s": 0.001169599941931665
+    }
+  ]
+}
