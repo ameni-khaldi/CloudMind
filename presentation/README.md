@@ -6,17 +6,13 @@ Présentation universitaire interactive en français, séparée des phases de tr
 
 ## Lancement local
 
-Depuis la racine du projet, dans PowerShell :
+Sous Windows, ouvrez le dossier `presentation` et double-cliquez sur `Launch-CloudMind.bat`. Le lanceur compile la présentation si nécessaire, choisit un port local libre et ouvre le navigateur par défaut.
 
-```powershell
-Set-Location presentation
-npm.cmd ci
-npm.cmd test
-npm.cmd run build
-npm.cmd run dev
-```
+Pour la première utilisation, installez Node.js 20 ou une version ultérieure, puis exécutez `npm.cmd ci` dans le dossier `presentation`. Une fois les dépendances installées, la compilation et les douze scènes fonctionnent hors ligne. Les liens vers la documentation externe nécessitent une connexion.
 
-Ouvrez http://127.0.0.1:5176. Pour vérifier la version compilée, lancez `npm.cmd run preview` et ouvrez http://127.0.0.1:4176. Node.js 20 est utilisé pour la validation. Les dépendances graphiques sont locales après installation.
+Gardez la fenêtre CloudMind ouverte pendant la présentation. Pour arrêter le serveur, fermez cette fenêtre. Vous pouvez ensuite fermer l’onglet du navigateur. Si l’ouverture automatique échoue, copiez l’adresse affichée dans la fenêtre.
+
+Pour le développement, exécutez `npm.cmd run dev` dans `presentation` et ouvrez http://127.0.0.1:5176. Exécutez `npm.cmd run build` pour recompiler après une modification des sources.
 
 L’étape Démonstration ouvre le vrai tableau de bord dans un autre onglet. Lancez-le depuis la racine du projet avec :
 
@@ -39,7 +35,7 @@ L’étape Démonstration ouvre le vrai tableau de bord dans un autre onglet. La
 | Plein écran | Utiliser le mode plein écran du navigateur |
 | Mouvement réduit | Couper les déplacements, particules et révélations animées |
 
-Le mode 2D s’active automatiquement si WebGL 2 est indisponible ou si le contexte échoue. Le bouton **2D** et l’adresse `http://127.0.0.1:5176/?mode=2d` permettent de le sélectionner manuellement. Les diagrammes 2D, listes de sélection et graphiques restent disponibles. Le réglage système de mouvement réduit est repris au chargement.
+Le mode 2D s’active automatiquement si WebGL 2 est indisponible ou si le contexte échoue. Le bouton **2D** et le paramètre `?mode=2d` dans l’adresse de la présentation permettent de le sélectionner manuellement. Les diagrammes 2D, listes de sélection et graphiques restent disponibles. Le réglage système de mouvement réduit est repris au chargement.
 
 ## Storyboard et direction graphique
 
